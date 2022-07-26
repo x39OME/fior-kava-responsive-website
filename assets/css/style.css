@@ -461,7 +461,9 @@ header .container .navbar ul li a.active {
   width: 50px;
   height: auto;
 }
-
+.cup-coffee .container .content .box-content .item-image{
+  width: 100%;
+}
 /* End Cup coffee */
 /* Start Photos*/
 .photos{
