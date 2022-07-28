@@ -67,6 +67,29 @@ body{
   line-height: 1.14286em;
   padding-bottom: var(--main-padding);
 }
+.triangle{
+  position: absolute;
+  bottom: -140px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 30px solid;
+  border-color: var(--mainColor) transparent transparent transparent;
+  border-radius: 5px;
+}
+.triangle::after{
+  content: '';
+  position: absolute;
+  top: -24px;
+  left: -15px;
+  border: 15px solid;
+  border-color: #fff transparent transparent transparent;
+  border-radius: 5px;
+}
+@media(max-width:767px){
+  .title{
+    font-size: 24px;
+  }
+}
 .textp{
   color:var(--colorText);
   font-weight: 300;
@@ -373,19 +396,12 @@ header .container .navbar ul li a.active {
 .cup-coffee::before{
   content: '';
   position: absolute;
-  top: 210px;
+  top: 200px;
   left: 50%;
   transform: translateX(-50%);
   height: 2px;
   width: 150px;
   background: #c7a17a;
-}
-/*Media*/
-@media(max-width:767px){
-  .cup-coffee::before{
-    position: absolute;
-    top: 225px;
-  }
 }
 .cup-coffee .container .content{
   display: flex;
@@ -524,19 +540,15 @@ header .container .navbar ul li a.active {
 .menu::before{
   content: '';
   position: absolute;
-  top: 210px;
+  top: 200px;
   left: 50%;
   transform: translateX(-50%);
   height: 2px;
   width: 150px;
   background: #c7a17a;
 }
-/*Media*/
-@media(max-width:767px){
-  .menu::before{
-    position: absolute;
-    top: 225px;
-  }
+.menu .container{
+  position: relative;
 }
 .menu .container .our-menu{
   display: flex;
@@ -569,7 +581,7 @@ header .container .navbar ul li a.active {
 }
 .menu .container .our-menu .menu-list .items .item h3{
   text-transform: uppercase;
-  font-size: 23px;
+  font-size: 19px;
 }
 @media(max-width:767px){
   .menu .container .our-menu .menu-list .items .item h3{
@@ -625,6 +637,16 @@ header .container .navbar ul li a.active {
   position: relative;
   padding-top: var(--main-padding);
   padding-bottom: var(--main-padding);
+}
+.home::before{
+  content: '';
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 150px;
+  background: #c7a17a;
 }
 .home .container .layout{
   display: grid;
