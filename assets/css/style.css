@@ -201,13 +201,12 @@ header .container .navbar ul{
 }
 header .container .navbar ul li a{
   text-decoration: none;
-  font-size: 24px;
+  font-size: 19px;
   color: var(--whiteColor);
   cursor: pointer;
   padding: 1px 2px;
   transition: var(--main-transition);
 }
-
 header .container .navbar ul li a:hover,
 header .container .navbar ul li a.active {
   background-color: var(--whiteColor);
@@ -349,7 +348,7 @@ header .container .navbar ul li a.active {
   }
 }
 .subscribe .container form p{
-  font-size: 28px;
+  font-size: 24px;
   font-weight: normal;
   margin-bottom: 20px;
 }
