@@ -261,7 +261,7 @@ header .container .navbar ul li a.active {
   color: var(--mainColor);
 }
 .landing .container p{
-  font-size: 21px;
+  font-size: 17px;
   color: var(--whiteColor);
   margin: 20px auto;
   text-align: center;
@@ -323,7 +323,6 @@ header .container .navbar ul li a.active {
   color: var(--secColor);
 }
 .info .container .box p{
-  font-size: 18px;
   margin-top: 10px;
   line-height: 1.2;
 }
@@ -518,7 +517,6 @@ header .container .navbar ul li a.active {
 /* End Photos*/
 
 /* Start Menu */
-
 .menu{
   position: relative;
   padding-top: var(--main-padding);
@@ -572,16 +570,35 @@ header .container .navbar ul li a.active {
 }
 .menu .container .our-menu .menu-list .items .item h3{
   text-transform: uppercase;
-  font-size: 22px;
+  font-size: 23px;
+}
+@media(max-width:767px){
+  .menu .container .our-menu .menu-list .items .item h3{
+    font-size: 17px;
+  }
+  .menu .container .our-menu .menu-list .items .item{
+    font-size: 16px;
+  }
+  .menu .container .our-menu .menu-list .items .holder .description{
+    font-size: 14px;
+  }
 }
 .menu .container .our-menu .menu-list .items .item .line{
-  border-bottom: 1px solid rgba(0,0,0,.1);
-  height: 3px;
-  width:200px;
-  z-index: 1;
   position: absolute;
   bottom: 8px;
   right: 60px;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  height: 3px;
+  width:200px;
+}
+@media(max-width:767px){
+  .menu .container .our-menu .menu-list .items .item .line{
+    position: absolute;
+    bottom: -35px;
+    right: 0;
+    height: 3px;
+    width: 100%;
+  }
 }
 .menu .container .our-menu .menu-list .items .holder {
   display: flex;
@@ -605,7 +622,7 @@ header .container .navbar ul li a.active {
 
 
 /* Start Guide*/
-.guide{
+.home{
   position: relative;
   padding-top: var(--main-padding);
   padding-bottom: var(--main-padding);
@@ -617,10 +634,16 @@ header .container .navbar ul li a.active {
 .home .container .layout div{
   padding: 60px;
 }
+@media(max-width:992px){
+  .home .container .layout div{
+    text-align: center;
+    width: 100%;
+    height: 300px;
+  }
+}
 .home .container .layout div h3{
   font-size: 19px;
   text-transform: uppercase;
-
 }
 .home .container .layout div p{
   margin: 30px 0;
@@ -641,7 +664,6 @@ header .container .navbar ul li a.active {
 }
 .home .container .layout div a:hover{
   text-decoration: line-through;
-
 }
 .home .container .layout div a:hover i{
   transition: var(--main-transition);
@@ -662,7 +684,6 @@ header .container .navbar ul li a.active {
   background-position: center;
   background-repeat: no-repeat;
 }
-
 .home .container .layout .element-4{
   background-image: url(../images/home/home-8-image-3.jpg);
   background-size: cover;
