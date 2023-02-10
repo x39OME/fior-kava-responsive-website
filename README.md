@@ -1,3 +1,3 @@
-# Responsive_Website_Fior_Kava
+# Fior Kava Responsive Website 
 
 `Responsive Website Using HTML\CSS & Javascript`
