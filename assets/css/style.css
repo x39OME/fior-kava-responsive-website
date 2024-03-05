@@ -3,7 +3,7 @@
   --main-transition:.3s;
   --main-padding:100px;
   --whiteColor:#F0ECE7;
-  --mainColor:#c7a17a;
+  --mainColor:#D7BA98;
   --secColor:#30271c;
   --colorText:#666
 }
@@ -240,7 +240,6 @@ header .container .navbar ul{
   }
   header .container .navbar ul a:hover{
     text-decoration: line-through;
-    
   }
 }
 header .container .navbar ul li a{
@@ -256,6 +255,7 @@ header .container .navbar ul li a.active {
   background-color: var(--whiteColor);
   color: var(--mainColor);
   border-radius: 5px;
+  padding: 5px 10px;
 }
 /* End Header */
 /* Start Langding */
